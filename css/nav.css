@@ -1,0 +1,45 @@
+.nav__wrapper {
+  grid-area: nav-wrapper;
+  border-bottom: 1px solid var(--borderColor);
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.nav__list {
+  margin: 0;
+  display: flex;
+}
+
+.nav__list li {
+  margin: 0 5px;
+}
+
+.browser-dots__wrapper {
+  display: flex;
+}
+
+.browser-dot {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.dot--red {
+  background-color: #fc6058;
+}
+.dot--yellow {
+  background-color: #fec02f;
+}
+.dot--green {
+  background-color: #2aca3e;
+}
