@@ -1,0 +1,38 @@
+.contactForm {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid var(--borderColor);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+  margin-bottom: 50px;
+}
+
+.contactForm label {
+  line-height: 2.7;
+}
+
+.contactForm textarea {
+  min-height: 100px;
+  font-size: 14px;
+}
+
+.contactForm__input {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
+  font-size: 14px;
+}
+
+.contactForm__submitBtn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  background-color: var(--btnColor);
+  border: none;
+  cursor: pointer;
+}

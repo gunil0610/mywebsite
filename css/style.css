@@ -1,23 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap");
+@import "./varDefault.css";
 @import "./section.css";
 @import "./intro.css";
 @import "./nav.css";
 @import "./theme.css";
-
-:root {
-  --mainColor: #eaeaea;
-  --secondaryColor: #fff;
-
-  --borderColor: #c1c1c1;
-
-  --mainText: #000;
-  --secondaryText: #4b5156;
-
-  --themeDotBorder: #24292e;
-
-  --previewBg: rgba(251, 249, 243, 0.8);
-  --previewShadow: #f0ead6;
-}
+@import "./about.css";
+@import "./post.css";
+@import "./contact.css";
 
 * {
   box-sizing: border-box;
@@ -82,6 +71,11 @@ h6 {
 .main-container {
   width: 1200px;
   margin: 0 auto;
+}
+
+/* Text Center */
+.tc {
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

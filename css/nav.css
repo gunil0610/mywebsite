@@ -1,12 +1,13 @@
-.nav__wrapper {
+.nav {
   grid-area: nav-wrapper;
   border-bottom: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+
   background-color: var(--mainColor);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  border-radius: 5px 5px 0 0;
+  padding: 10px;
 }
 
 .nav__list {
@@ -16,6 +17,10 @@
 
 .nav__list li {
   margin: 0 5px;
+}
+
+.nav__list a {
+  color: var(--mainText);
 }
 
 .browser-dots__wrapper {
