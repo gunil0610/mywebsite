@@ -94,8 +94,8 @@ h6 {
     grid-template-columns: 1fr;
     grid-template-areas:
       "nav-wrapper"
-      "left-column"
-      "right-column";
+      "intro__left"
+      "intro__right";
   }
 
   .right-column {

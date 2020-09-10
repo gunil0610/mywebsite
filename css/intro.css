@@ -1,11 +1,11 @@
-.greeting__wrapper {
+.greeting {
   display: grid;
   text-align: center;
   align-content: center;
   min-height: 10em;
 }
 
-.intro__wrapper {
+.intro {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
@@ -18,14 +18,14 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "nav-wrapper nav-wrapper"
-    "left-column right-column";
+    "intro__left intro__right";
 
   overflow: hidden;
 }
 
 /* Left column of intro  */
-.left-column {
-  grid-area: left-column;
+.intro__left {
+  grid-area: intro__left;
   padding: 50px 0;
 }
 
@@ -40,8 +40,8 @@
 }
 
 /* Right colum of intro */
-.right-column {
-  grid-area: right-column;
+.intro__right {
+  grid-area: intro__right;
   display: grid;
   align-content: center;
 
