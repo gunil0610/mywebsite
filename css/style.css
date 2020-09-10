@@ -18,6 +18,10 @@ body {
   margin: 0;
 }
 
+body * {
+  transition: all 0.3s ease-in;
+}
+
 h1,
 h2,
 h3,
@@ -83,16 +87,17 @@ h6 {
     width: 95%;
   }
 }
+
 @media screen and (max-width: 800px) {
-  .intro__wrapper {
+  .intro {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "nav-wrapper"
+      "nav"
       "intro__left"
       "intro__right";
   }
 
-  .right-column {
+  .intro__right {
     justify-content: center;
   }
 }

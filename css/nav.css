@@ -1,5 +1,5 @@
 .nav {
-  grid-area: nav-wrapper;
+  grid-area: nav;
   border-bottom: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
 
