@@ -19,7 +19,7 @@ body {
 }
 
 body * {
-  transition: all 0.3s ease-in;
+  transition: 0.3s;
 }
 
 h1,
@@ -99,5 +99,18 @@ h6 {
 
   .intro__right {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .preview__shadow {
+    max-width: 280px;
+    height: 180px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .preview {
+    width: 280px;
   }
 }

@@ -34,3 +34,15 @@
   color: #4b5156;
   font-size: 16px;
 }
+
+.post__detail {
+  width: 100% !important;
+  height: 100vh;
+  background-color: var(--secondaryColor);
+  overflow: hidden;
+}
+
+.post__detail h3 {
+  padding: 0;
+  margin: 0;
+}
