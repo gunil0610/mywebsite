@@ -37,3 +37,17 @@
   border: none;
   cursor: pointer;
 }
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid var(--borderColor);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+  margin-bottom: 50px;
+  color: var(--mainText);
+}
