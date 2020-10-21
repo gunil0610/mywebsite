@@ -36,6 +36,15 @@
   font-size: 16px;
 }
 
+.post__link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .post__link-container a:not(:last-of-type) {
+  margin-right: 20px;
+} */
+
 .posts__more {
   position: absolute;
   bottom: 40px;
