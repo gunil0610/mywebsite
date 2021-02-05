@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap");
-@import "./varDefault.css";
-@import "./section.css";
-@import "./intro.css";
-@import "./nav.css";
-@import "./theme.css";
-@import "./about.css";
-@import "./post.css";
-@import "./contact.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import './varDefault.css';
+@import './section.css';
+@import './intro.css';
+@import './nav.css';
+@import './theme.css';
+@import './about.css';
+@import './post.css';
+@import './contact.css';
 
 * {
   box-sizing: border-box;
@@ -30,7 +31,7 @@ h5,
 h6,
 strong {
   color: var(--mainText);
-  font-family: "Russo One", sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-weight: 500;
 }
 
@@ -41,13 +42,13 @@ label,
 input,
 textarea {
   color: var(--secondaryText);
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 a {
   text-decoration: none;
   color: #17a2b8;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 ul {
@@ -93,9 +94,9 @@ h6 {
   .intro {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "nav"
-      "intro__left"
-      "intro__right";
+      'nav'
+      'intro__left'
+      'intro__right';
   }
 
   .intro__right {
@@ -114,4 +115,8 @@ h6 {
   .preview {
     width: 280px;
   }
+}
+
+.ko {
+  font-family: 'Jua', sans-serif;
 }
