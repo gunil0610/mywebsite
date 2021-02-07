@@ -53,13 +53,7 @@ const changeLanguage = () => {
   }
 };
 
-// 브라우저 설정이 한국어일 경우 html lang 'ko'로 변경
-if (navigator.language === 'ko-KR') {
-  document.documentElement.lang = navigator.language.slice(0, 2);
-  changeLanguage();
-}
-
-toggleLangBtn.addEventListener('click', () => {
+const toggleLang = () => {
   toggleLangBtn.classList.toggle('ko');
   if (document.documentElement.lang === 'ko') {
     document.documentElement.lang = 'en';
@@ -69,4 +63,14 @@ toggleLangBtn.addEventListener('click', () => {
     toggleLangBtn.innerText = 'ENG';
   }
   changeLanguage();
-});
+};
+
+// 브라우저 설정이 한국어일 경우 html lang 'ko'로 변경
+if (navigator.language === 'ko-KR') {
+  document.documentElement.lang = navigator.language.slice(0, 2);
+  toggleLangBtn.classList.toggle('ko');
+  toggleLangBtn.innerText = 'ENG';
+  changeLanguage();
+}
+
+toggleLangBtn.addEventListener('click', toggleLang);
