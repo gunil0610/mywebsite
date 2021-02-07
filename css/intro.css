@@ -1,4 +1,5 @@
 .greeting {
+  position: relative;
   display: grid;
   text-align: center;
   align-content: center;
@@ -17,8 +18,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "nav nav"
-    "intro__left intro__right";
+    'nav nav'
+    'intro__left intro__right';
 
   overflow: hidden;
 }

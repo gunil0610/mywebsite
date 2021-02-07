@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import './varDefault.css';
 @import './section.css';
 @import './intro.css';
@@ -8,6 +9,7 @@
 @import './about.css';
 @import './post.css';
 @import './contact.css';
+@import './toggle.css';
 
 * {
   box-sizing: border-box;
@@ -118,5 +120,10 @@ h6 {
 }
 
 .ko {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1.ko {
   font-family: 'Jua', sans-serif;
+  font-size: 52px;
 }
