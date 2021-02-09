@@ -6,8 +6,14 @@
   border: none;
   outline: none;
   color: var(--secondaryText);
+  text-decoration: none;
+}
+
+.toggle-lang:hover {
+  cursor: pointer;
 }
 
 .toggle-lang:active {
   transform: scale(0.98);
+  text-decoration: underline;
 }
