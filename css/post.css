@@ -109,3 +109,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+#post-toggle-lang {
+  height: 30px;
+  text-align: center;
+  right: 50px;
+}

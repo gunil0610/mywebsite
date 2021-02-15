@@ -53,18 +53,18 @@ const placeholders = {
   },
 };
 
-const changeLanguage = () => {
+const changeLanguage = (placeholderObj) => {
   if (document.documentElement.lang === 'ko') {
-    for (let item in placeholders.ko) {
-      placeholders.ko[item].domEl.classList.toggle('ko');
-      placeholders.ko[item].domEl.innerText = placeholders.ko[item].text;
+    for (let item in placeholderObj.ko) {
+      placeholderObj.ko[item].domEl.classList.toggle('ko');
+      placeholderObj.ko[item].domEl.innerText = placeholderObj.ko[item].text;
     }
     renderedToKor = true;
   } else {
     if (renderedToKor) {
-      for (let item in placeholders.en) {
-        placeholders.en[item].domEl.classList.toggle('ko');
-        placeholders.en[item].domEl.innerText = placeholders.en[item].text;
+      for (let item in placeholderObj.en) {
+        placeholderObj.en[item].domEl.classList.toggle('ko');
+        placeholderObj.en[item].domEl.innerText = placeholderObj.en[item].text;
       }
       renderedToKor = false;
     }
@@ -80,7 +80,7 @@ const toggleLang = () => {
     document.documentElement.lang = 'ko';
     toggleLangBtn.innerText = 'ENG';
   }
-  changeLanguage();
+  changeLanguage(placeholders);
 };
 
 // 브라우저 설정이 한국어일 경우 html lang 'ko'로 변경
@@ -88,7 +88,7 @@ if (navigator.language === 'ko-KR') {
   document.documentElement.lang = navigator.language.slice(0, 2);
   toggleLangBtn.classList.toggle('ko');
   toggleLangBtn.innerText = 'ENG';
-  changeLanguage();
+  changeLanguage(placeholders);
 }
 
 toggleLangBtn.addEventListener('click', toggleLang);
