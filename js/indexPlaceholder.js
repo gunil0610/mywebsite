@@ -38,8 +38,8 @@ const placeholders = {
       domEl: previewText,
     },
     aboutMeText: {
-      text: `저는 가천대학교 전자공학과를 졸업했습니다.\n
-        같이 일하고 싶은 똑똑한 개발자가 되기 위하여 배우고 노력하고 있습니다.\n`,
+      text: `같이 일하고 싶은 똑똑한 개발자가 되기 위하여 배우고 노력하고 있습니다.\n
+      새로운 기술을 배우는 것을 좋아하고 문제를 해결하는 것을 좋아합니다.\n`,
       domEl: aboutMeText,
     },
     skillsText: {
